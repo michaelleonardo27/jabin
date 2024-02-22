@@ -1,7 +1,7 @@
 @font-face {
     font-family:"Jabin";
     src: url('./fonts/Jabin-Typeface.woff2') format('woff2');
-    src: url('./fonts/Jabin-Typeface.ttf') format('ttf');
+    src: url('./fonts/Jabin-Typeface.ttf') format('truetype');
     font-weight: 0 1000;
     font-display:swap;
 }
