@@ -98,3 +98,36 @@ ul{
 .tilt-prism-regular-regular {
     font-variation-settings: "HROT" 0, "VROT" 0;
 }
+
+.special-character-wrapper {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: repeat(2, 100px);
+    font-size: 90px;
+    animation: weightChangeSpecialCharacter 3s infinite;
+
+}
+
+
+.special-character-wrapper:nth-child(1) {
+    animation: weightChangeSpecialCharacter 3s infinite;
+    animation-delay: 01s;
+}
+
+.special-character-wrapper:nth-child(2) {
+    animation-delay: 0.4s; /* Changed delay to stagger */
+}
+
+.special-character-wrapper:nth-child(3) {
+    animation-delay: 0.6s; /* Changed delay to stagger */
+}
+
+@keyframes weightChangeSpecialCharacter {
+    0%, 100% {
+        font-variation-settings: "wght" 40, "wdth" 0, "XXXX" 1;
+    }
+    50% {
+        font-variation-settings: "wght" 120, "wdth" 10, "XXXX" 100;
+    }
+}
